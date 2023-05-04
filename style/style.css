@@ -1,0 +1,50 @@
+
+
+#body{
+    background-color:grey !important;
+}
+
+
+#flip{
+    background-image: url(/C12\ C1\ Antonio\ Torre\ \(1\).JPG) !important;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 48vh !important;
+    transform-style: preserve-3d;
+  
+
+}
+#flip:hover{
+    transform: rotateY(180deg);
+    transition: 2s ease-in-out;
+
+    
+}
+
+.front,
+.back{
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.front{
+    position: relative;
+
+    
+}
+
+.back{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: rotateY(180deg) !important;
+    background-color: burlywood !important;
+
+ 
+    
+
+}
